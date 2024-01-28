@@ -1,0 +1,55 @@
+<head>
+    <title>Orders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html" class="button">Index</a>
+        <a href="customer.html" class="button">Customers</a>
+        <a href="employee.html" class="button">Employees</a>
+        <a href="items.html" class="button">Items</a>
+        <a href="order.html" class="button">Orders</a>
+        <a href="orderitems.html" class="button">Order Items</a>
+        <a href="search.html" class="button">Search</a>
+    </nav>
+</header>
+<div class="seperator"></div>
+<fieldset class="cfieldset">
+    <!-- form for adding a new order, items are dynamically generated from the items using orderform.js -->
+    <form id="order-form">
+        <div id="items-container">
+        </div>
+        <br><br>
+        <label for="customer">Select customer:</label>
+        <select id="customer" name="customer">
+        </select>
+        <br><br>
+        <label for="employee">Select employee:</label>
+        <select id="employee" name="employee">
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script src="orderform.js"></script>
+</fieldset>
+<div class="seperator"></div>
+<table class="custtable">
+    <thead>
+        <!-- table generated for all orders using ordertable.js -->
+        <tr>
+            <th>ID</th>
+            <th>CustomerID</th>
+            <th>EmployeeID</th>
+			<th>Date</th>
+            <th>Total</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<script src="ordertable.js"></script>
+<div class="seperator"></div>
+</body>
+</html>

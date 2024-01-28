@@ -1,0 +1,55 @@
+<head>
+    <title>Customers</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+</head>
+<header>
+	<!-- navigation -->
+	<nav>
+		<a href="index.html" class="button">Index</a>
+		<a href="customer.html" class="button">Customers</a>
+		<a href="employee.html" class="button">Employees</a>
+		<a href="items.html" class="button">Items</a>
+		<a href="order.html" class="button">Orders</a>
+        <a href="orderitems.html" class="button">Order Items</a>
+		<a href="search.html" class="button">Search</a>
+	</nav>
+</header>
+<body>
+	<!-- form for adding a customer -->
+	<div class="seperator"></div>
+	<fieldset class="cfieldset">
+		<form class="cform" action="/add-customer" method="post">
+			<label for="firstName">First Name:</label>
+			<input type="text" id="firstName" name="firstName"><br><br>
+			<label for="lastName">Last Name:</label>
+			<input type="text" id="lastName" name="lastName"><br><br>
+			<label for="phone">Phone Number:</label>
+			<input type="text" id="phone" name="phone"><br><br>		
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email"><br><br>
+			<label for="address">Address:</label>
+			<textarea id="address" name="address" rows="2" cols="18"></textarea><br><br>	
+			<input type="submit" value="Add">
+		</form>		
+		</fieldset>
+	<!-- generated table of customers using customertable.js -->
+	<div class="seperator"></div>
+	<table class="custtable">
+		<thead>
+		  <tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Phone Number</th>
+			<th>Address</th>
+			<th>Email</th>
+			<th>Actions</th>
+		  </tr>
+		</thead>
+		<tbody>
+		</tbody>
+	  </table>
+	<script src="customertable.js"></script>
+</body>
+</html>
+

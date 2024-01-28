@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    background-color: #dadada;
+    font-size: 18;
+}
+
+.indexb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #dadada;
+    font-size: 28;
+}
+
+header {
+    background-color: #006ce0;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.seperator {
+    padding-top: 30px;
+}
+
+.invis {
+    border: 5px solid;
+    border-color: #007bff; 
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.cform {
+    margin: 0 auto; 
+    width: 50%; 
+    text-align: center;
+}
+
+.cfieldset {
+    margin: 0 auto; 
+    width: 40%;
+}
+
+.tablefieldset {
+    margin: 0 auto; 
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;  
+}
+  
+table, th, td {
+    border: 1px solid black;
+  }
+  
+th, td {
+    padding: 8px;
+  }
+
+tr:first-child th,
+tr:first-child td {
+  border-bottom: 2px solid #000;
+}
+
+  th:nth-child(4), td:nth-child(4) {
+    width: 35%;
+  }
+  
+  th:nth-child(6), td:nth-child(6),
+  th:nth-child(7), td:nth-child(7) {
+    text-align: center;
+    width: 10%;
+}

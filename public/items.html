@@ -1,0 +1,49 @@
+<head>
+    <title>Items</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+</head>
+<header>
+	<nav>
+		<a href="index.html" class="button">Index</a>
+		<a href="customer.html" class="button">Customers</a>
+		<a href="employee.html" class="button">Employees</a>
+		<a href="items.html" class="button">Items</a>
+		<a href="order.html" class="button">Orders</a>
+        <a href="orderitems.html" class="button">Order Items</a>
+		<a href="search.html" class="button">Search</a>
+	</nav>
+</header>
+<body>
+	<!-- form for adding a new item -->
+	<div class="seperator"></div>
+	<fieldset class="cfieldset">
+		<form class="cform" action="/add-item" method="post"> 
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br><br>
+			<label for="price">Price:</label>
+			<input type="number" id="price" name="price"><br><br>
+            <label for="restriction">Restriction:</label>
+		    <input type="number" id="restriction" name="restriction"><br><br>
+			<input type="submit" value="Add">
+		</form>		
+		</fieldset>
+	<div class="seperator"></div>
+	<!-- table generated for all items using itemstable.js -->
+	<table class="custtable">
+		<thead>
+		  <tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Restriction</th>
+			<th>Actions</th>
+		  </tr>
+		</thead>
+		<tbody>
+		</tbody>
+	  </table>
+	<script src="itemstable.js"></script>
+</body>
+</html>
+

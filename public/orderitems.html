@@ -1,0 +1,40 @@
+<head>
+    <title>Order Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav>
+        <a href="index.html" class="button">Index</a>
+        <a href="customer.html" class="button">Customers</a>
+        <a href="employee.html" class="button">Employees</a>
+        <a href="items.html" class="button">Items</a>
+        <a href="order.html" class="button">Orders</a>
+        <a href="orderitems.html" class="button">Order Items</a>
+        <a href="search.html" class="button">Search</a>
+    </nav>
+</header>
+<body>
+    <div class="seperator"></div>
+    <fieldset class="cfieldset">
+        <legend>Order Search</legend>
+        <form class="cform" id="search-form">
+            <label for="oid">Order ID:</label>
+            <input type="text" id="oid" name="oid"><br><br>
+            <input type="submit" value="Search">
+        </form>
+    </fieldset>
+    <div class="seperator"></div>
+    <fieldset>
+        <!-- table of orderitems in the entered order, generated from the order id put in and button press -->
+        <table class="custtable">
+            <tr>
+                <th>OrderID</th>
+                <th>ItemID</th>
+                <th>Count</th>
+            </tr>
+        </table>
+    </fieldset>
+    <div class="seperator"></div>
+    <script src="orderitemstable.js"></script>></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql-upgrade": "^0.1.2"
+  },
+  "name": "restaurant",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyouketsu/Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyouketsu/Restaurant/issues"
+  },
+  "homepage": "https://github.com/Hyouketsu/Restaurant#readme",
+  "description": ""
+}
